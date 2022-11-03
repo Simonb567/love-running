@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather&family=Montserrat&family=Oswald:wght@300&family=Sacramento&display=swap');
+/* import statements go at top of the style sheet  */
+/* better to import rather than linking fonts */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* asterisk * is a wild card */
+/*
+good practice to start the stylesheet to allow for more control over the box model measurements
+and the positioning of elements within the design.
+*/
+
+
 body {
-  font-family: Arial;
+  font-family: lato, sans-serif;
+  font-weight: 300;
 }
