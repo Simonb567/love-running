@@ -46,27 +46,7 @@ h1, h2 {
   border-bottom: 1px solid #3a3a3a
 }
 
-#hero-outer {
-  height: 600px;
-  width: 100%;
-  overflow: hidden;
-}
 
-#hero-image {
-  height: 600px;
-  width: 100%;
-  background: url(../images/hero-image.webp) no-repeat center center;
-  /* background: can be used for decorative images */
-  /* the "no repeat" will avoid the image being repeated if the screen is larger than the image */
-  /* use <img> when including actual images within page */
-
-  /* the below animates our hero image */
-  /* see above animation styling */
-  animation-name: hero-zoom;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-
-}
 
 #menu li {
   float: right;
@@ -88,6 +68,32 @@ h1, h2 {
   /* underline onces hovering over links */
 }
 
+/* styles our overlay text */
+#cover-text, #cover-text h2  {
+  color: #fff;
+}
+
+#cover-text {
+  font-size: 130%;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  width: 300px;
+  height: 200px;
+
+  padding-top: 40px;
+  padding-left: 10px;
+
+  background-color: rgba(241, 109, 107, .7);
+  /* setting the colour using rgba allows to set the opacity */
+
+  bottom: 30px;
+  right: 150px;
+
+  position: absolute;
+}
+
 #logo {
   float: left;
   font-size: 280%;
@@ -103,4 +109,28 @@ h1, h2 {
 #menu, #logo {
   line-height: 75px;
   /* aims to center align our menu/logo within box */
+}
+
+#hero-outer {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+
+  position: relative;
+}
+
+#hero-image {
+  height: 600px;
+  width: 100%;
+  background: url(../images/hero-image.webp) no-repeat center center;
+  /* background: can be used for decorative images */
+  /* the "no repeat" will avoid the image being repeated if the screen is larger than the image */
+  /* use <img> when including actual images within page */
+
+  /* the below animates our hero image */
+  /* see above animation styling */
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+
 }
