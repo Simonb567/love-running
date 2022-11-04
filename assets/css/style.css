@@ -28,7 +28,43 @@ h1, h2 {
   color: #252525;
 }
 
+.active {
+  border-bottom: 1px solid #3a3a3a
+}
+
 #logo {
   float: left;
   font-size: 280%;
+  /* responive sizing to screen size  */
+}
+
+#menu {
+  font-size: 110%;
+  /* responive sizing to screen size */
+  letter-spacing: 4px;
+}
+
+#menu, #logo {
+  line-height: 75px;
+  /* aims to center align our menu/logo within box */
+}
+
+#menu li {
+  float: right;
+  list-style-type: none;
+  /* removes the default bullet points */
+  margin-right: 30px;
+  /* creates space between <li> items */
+}
+
+#menu a {
+  text-decoration: none;
+  /* this removes the default underline that <a> has */
+  color: inherit;
+  /* this will inherit the nearest parent who has a color set i.e <body> */
+}
+
+#menu a:hover {
+  border-bottom: 1px solid #3a3a3a;
+  /* underline onces hovering over links */
 }
