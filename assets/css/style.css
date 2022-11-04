@@ -2,6 +2,20 @@
 /* import statements go at top of the style sheet  */
 /* better to import rather than linking fonts */
 
+@keyframes hero-zoom {
+  from{
+    transform: scale(1);
+    /* scales the image by 100% */
+  }
+/* sets the from (starting) point of our animation */
+  to{
+    transform: scale(1.1);
+    /* scales the image to 110% */
+  }
+  /* sets the end point  */
+}
+/* creates the level of zoom for our hero image */
+
 * {
   margin: 0;
   padding: 0;
@@ -32,21 +46,26 @@ h1, h2 {
   border-bottom: 1px solid #3a3a3a
 }
 
-#logo {
-  float: left;
-  font-size: 280%;
-  /* responive sizing to screen size  */
+#hero-outer {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
 }
 
-#menu {
-  font-size: 110%;
-  /* responive sizing to screen size */
-  letter-spacing: 4px;
-}
+#hero-image {
+  height: 600px;
+  width: 100%;
+  background: url(../images/hero-image.webp) no-repeat center center;
+  /* background: can be used for decorative images */
+  /* the "no repeat" will avoid the image being repeated if the screen is larger than the image */
+  /* use <img> when including actual images within page */
 
-#menu, #logo {
-  line-height: 75px;
-  /* aims to center align our menu/logo within box */
+  /* the below animates our hero image */
+  /* see above animation styling */
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+
 }
 
 #menu li {
@@ -67,4 +86,21 @@ h1, h2 {
 #menu a:hover {
   border-bottom: 1px solid #3a3a3a;
   /* underline onces hovering over links */
+}
+
+#logo {
+  float: left;
+  font-size: 280%;
+  /* responive sizing to screen size  */
+}
+
+#menu {
+  font-size: 110%;
+  /* responive sizing to screen size */
+  letter-spacing: 4px;
+}
+
+#menu, #logo {
+  line-height: 75px;
+  /* aims to center align our menu/logo within box */
 }
