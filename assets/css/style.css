@@ -40,6 +40,10 @@ hr {
   margin: 5px 0;
 }
 
+footer {
+  height: 150px;
+}
+
 /* headings & logo */
 h1, h2 {
   font-family: Oswald, sans-serif;
@@ -68,12 +72,27 @@ h1, h2 {
   margin-bottom: 50px;
 }
 
+.social-networks {
+  text-align: center;
+}
+
 .right-about-heading h2 {
   text-align: right;
 }
 
 .right-about-heading p {
   text-align: right;
+}
+
+.social-networks > li {
+  display: inline;
+}
+
+.social-networks i {
+  font-size: 160%;
+  margin: 1%;
+  padding: 5%;
+  color: #3a3a3a;
 }
 
 #menu li {
