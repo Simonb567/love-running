@@ -98,6 +98,7 @@ h1, h2 {
   float: left;
   font-size: 280%;
   /* responive sizing to screen size  */
+  margin-left: 30px;
 }
 
 #menu {
@@ -132,5 +133,36 @@ h1, h2 {
   animation-name: hero-zoom;
   animation-duration: 5s;
   animation-fill-mode: forwards;
+}
 
+/* club ethos design */
+#club-ethos {
+  height: 600px;
+
+}
+
+#left-about {
+  padding-top: 30px;
+  width: 33%;
+  float: left;
+
+  background-color: blue;
+  /* set contrasting background color to help visualise layout */
+}
+
+#right-about {
+  padding-top: 30px;
+  width: 33%;
+  float: right;
+
+  background-color: red;
+  /* set contrasting background color to help visualise layout */
+}
+
+#center-about {
+  padding-top: 30px;
+  margin: 0 auto;
+
+  background-color: green;
+  /* set contrasting background color to help visualise layout */
 }
