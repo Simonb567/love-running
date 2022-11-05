@@ -191,7 +191,33 @@ h1, h2 {
   padding-top: 30px;
   margin: 0 auto;
 
-  background-color: green;
-  overflow: hidden;
+  /* background-color: green; */
   /* set contrasting background color to help visualise layout */
+}
+
+#welcome {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 280%;
+}
+
+#circle-container {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px;
+  border-radius: 50%;
+  /* the above creates a circle but needs a square container to be equal in width/height */
+  margin: 0 auto;
+}
+
+#circle-cover-bg {
+  background: url(../images/ethos-center-image.jpg) no-repeat center center;
+  height: 100%;
+  /* set the above to the parent <div> or the image wont show */
+
+  border-radius: 50%;
+  /* the above creates a circle but needs a square container to be equal in width/height */  
 }
