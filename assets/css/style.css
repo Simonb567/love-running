@@ -93,7 +93,13 @@
     text-align: center;
     padding: 0 20px;
   }
+
+  #photos {
+    column-count: 3;
+  }
 }
+
+
 
 
 
@@ -362,4 +368,11 @@ h1, h2 {
   /* sets how many columns the images are displayed in */
   column-gap: 0;
   /* removes vertical gaps */
+}
+
+@media screen and (max-width: 800px) {
+  #photos {
+    column-count: 2;
+  }
+
 }
