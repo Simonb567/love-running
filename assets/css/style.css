@@ -219,5 +219,15 @@ h1, h2 {
   /* set the above to the parent <div> or the image wont show */
 
   border-radius: 50%;
-  /* the above creates a circle but needs a square container to be equal in width/height */  
+  /* the above creates a circle but needs a square container to be equal in width/height */
+}
+
+/* event times image */
+#times {
+  background-image: url(../images/dublin-city.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
 }
