@@ -136,6 +136,10 @@ h1, h2 {
   color: #fafafa;
 }
 
+#photos > img {
+  width: 100%;
+}
+
 #cover-text {
   font-size: 130%;
   font-family: Oswald, sans-serif;
@@ -265,4 +269,16 @@ h1, h2 {
   background-position: center;
   width: 100%;
   overflow: hidden;
+}
+
+/* gallery */
+#photos {
+  clear: both;
+  /* this displays the photos beneath the header */
+  line-height: 0;
+  /* removes horizontal gaps between images */
+  column-count: 4;
+  /* sets how many columns the images are displayed in */
+  column-gap: 0;
+  /* removes vertical gaps */
 }
